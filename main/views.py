@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def main_view(request):
-    return render(request,"views/index.html")
+    return render(request,"views/main.html")
 
 def about_view(request):
     return render(request,"views/about.html")
