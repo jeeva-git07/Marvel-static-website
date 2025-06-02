@@ -1,0 +1,28 @@
+{% extends "base/base.html" %}
+{% block 'main' %}
+<div class="container-fluid">
+<h1>Media Gallery</h1>
+
+<p>Explore our curated selection of images, videos, and other multimedia that showcase our work, culture, and community.</p>
+
+<h2>Photo Gallery</h2>
+  <div class="row">
+    <div class="mt-3 col-sm-12 col-md-6 col-lg-4 d-flex align-items-center"><img src="/static/img/marvel.jpg" alt="" width="350px" height="350px"></div>
+    <div class="mt-3 col-sm-12 col-md-6 col-lg-4 d-flex align-items-center"><img src="/static/img/marvel_grp.jpg" alt="" width="350px" height="350px"></div>    
+    <div class="mt-3 col-sm-12 col-md-6 col-lg-4"><img src="/static/img/avengers.jpg" alt="" width="300" height="451"></div>
+  </div>
+<h2 class="mt-3">Videos</h2>
+<video class="mt-3 text-center" controls>
+  <source src="/static/img/marvel_intro.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h2 class="mt-3">Downloads</h2>
+<ul>
+  <li><a class="text-decoration-none" href="/static/files/marvel_brochure.pdf" download>Download Our Brochure (PDF)</a></li>
+  <li><a class="text-decoration-none" href="/static/media/marvel_presentation.pptx" download>Company Presentation (PPTX)</a></li>
+</ul>
+
+<p>Check back regularly for updates as we continue to grow our library!</p>
+</div>
+{% endblock %}
